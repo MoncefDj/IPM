@@ -1,0 +1,77 @@
+@import 'Common.css';
+@import 'MFXColors.css';
+
+.mfx-button {
+	-fx-font-family: 'Visby Round CF Medium';
+	-fx-text-fill: -mfx-text-he;
+}
+
+.mfx-button .mfx-ripple-generator {
+	-mfx-ripple-radius: 40.0;
+	-mfx-auto-clip: true;
+}
+
+.mfx-button .text {
+	-fx-font-smoothing-type: lcd;
+}
+
+.outline-button {
+	-fx-background-color: transparent;
+	-fx-border-color: -mfx-steel-blue;
+	-fx-border-radius: 3.0;
+
+	-fx-text-fill: -mfx-steel-blue;
+}
+
+.outline-button:hover {
+	-fx-background-color: -mfx-steel-blue;
+	-fx-text-fill: white;
+}
+
+.mfx-list-view .virtual-flow .mfx-list-cell .data-label {
+	-fx-font-family: 'Visby Round CF Medium';
+}
+
+.mfx-list-view .virtual-flow .mfx-list-cell:selected .data-label {
+	-fx-font-family: 'Visby Round CF Demi Bold';
+}
+
+#exportScrollPane {
+	-fx-background-radius: 10.0;
+	-fx-border-radius: 10.0;
+	-fx-padding: 4.0;
+}
+
+#exportScrollPane .virtual-flow {
+	-fx-background-color: transparent;
+}
+
+
+#exportScrollPane .virtual-flow .mfx-list-cell {
+	-fx-background-color: transparent;
+	-fx-border-color: transparent;
+	-fx-background-radius: 10.0;
+	-fx-border-radius: 10.0;
+}
+
+#exportScrollPane .virtual-flow .mfx-list-cell .data-label {
+	-fx-text-fill: black;
+	-fx-font-size: 14;
+}
+
+#exportScrollPane .virtual-flow .mfx-list-cell .user-icon {
+	-mfx-color: white;
+}
+
+#exportScrollPane .virtual-flow .mfx-list-cell:hover,
+#exportScrollPane .virtual-flow .mfx-list-cell:selected {
+	-fx-background-color: rgba(255.0, 255.0, 255.0, 0.3);
+}
+
+#resultsFexportScrollPanelowPane .virtual-flow .mfx-list-cell .mfx-ripple-generator {
+	-mfx-auto-clip: true;
+}
+
+#exportScrollPane .virtual-flow .mfx-list-cell:selected .mfx-ripple-generator {
+	-mfx-paused: true;
+}

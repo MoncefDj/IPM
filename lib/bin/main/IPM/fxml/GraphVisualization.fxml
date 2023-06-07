@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+
+<GridPane alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="grid-pane" stylesheets="@../css/Common.css" vgap="10.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="IPM.controllers.GraphVisualizationController">
+	<columnConstraints>
+		<ColumnConstraints halignment="CENTER" minWidth="10.0" />
+		<ColumnConstraints halignment="CENTER" minWidth="10.0" prefWidth="500.0" />
+		<ColumnConstraints halignment="CENTER" minWidth="10.0" prefWidth="130.0" />
+		<ColumnConstraints halignment="CENTER" minWidth="10.0" />
+	</columnConstraints>
+	<rowConstraints>
+		<RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="480.0" vgrow="SOMETIMES" />
+		<RowConstraints minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+	</rowConstraints>
+	<children>
+		<StackPane minHeight="150.0" minWidth="300.0" styleClass="grid-background" GridPane.columnSpan="3" GridPane.rowIndex="1">
+			<GridPane.margin>
+				<Insets bottom="-15.0" left="-15.0" right="-15.0" />
+			</GridPane.margin>
+		</StackPane>
+		<MFXButton fx:id="nextMFXButton" minHeight="27.0" minWidth="70.0" onAction="#handleNextMFXButton" style="-fx-font-size: 16;" styleClass="outline-button" stylesheets="@../css/Export.css" text="Next" GridPane.columnIndex="3" GridPane.rowIndex="2">
+			<GridPane.margin>
+				<Insets left="8.0" />
+			</GridPane.margin>
+		</MFXButton>
+		<BorderPane fx:id="graphVisualizationBorderPane" stylesheets="@../css/smartgraph.css" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+		<MFXButton fx:id="backButton" minHeight="27.0" minWidth="70.0" onAction="#handlebackMFXButton" prefHeight="40.0" style="-fx-font-size: 14;" styleClass="outline-button" stylesheets="@../css/Export.css" text="Product List">
+			<GridPane.margin>
+				<Insets left="-10.0" top="-20.0" />
+			</GridPane.margin>
+		</MFXButton>
+		<MFXButton fx:id="advancedviewButton" buttonType="RAISED" minHeight="27.0" minWidth="70.0" onAction="#handleadvancedviewButtonMFXButton" prefHeight="40.0" style="-fx-font-size: 14; -fx-background-color: #4397ce; -fx-text-fill: white;" styleClass="mfx-button" stylesheets="@../css/Export.css" text="Advanced View" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="14.0" />
+         </GridPane.margin></MFXButton>
+	</children>
+</GridPane>

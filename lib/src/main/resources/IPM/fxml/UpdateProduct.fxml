@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXScrollPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="rootPane" prefHeight="400.0" prefWidth="400.0" style="-fx-background-radius: 16; -fx-background-color: white; -fx-border-color: #4397ce; -fx-border-radius: 16;" styleClass="rootPane" stylesheets="@../css/UpdateProduct.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <MFXScrollPane fx:id="updateScrollPane" layoutX="7.0" layoutY="67.0" prefHeight="256.0" prefWidth="387.0" />
+	<Label graphicTextGap="15.0" layoutX="155.0" layoutY="33.0" style="-fx-text-fill: #4397ce; -fx-font-size: 18;" styleClass="header" text="Update Product" />
+	<MFXButton fx:id="canceldMFXButton" layoutX="20.0" layoutY="338.0" minHeight="27.0" minWidth="70.0" onAction="#handleCanceldMFXButton" styleClass="outline-button" stylesheets="@../css/Export.css" text="Cancel" />
+</AnchorPane>

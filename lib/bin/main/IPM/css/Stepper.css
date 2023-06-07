@@ -1,0 +1,16 @@
+@import 'Common.css';
+@import 'MFXColors.css';
+
+.outline-button {
+	-fx-background-color: transparent;
+	-fx-border-color: -mfx-steel-blue;
+	-fx-border-radius: 3.0;
+
+	-fx-text-fill: -mfx-steel-blue;
+}
+
+.outline-button:hover,
+.outline-button:focused {
+	-fx-background-color: -mfx-steel-blue;
+	-fx-text-fill: white;
+}

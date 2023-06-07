@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane fx:id="rootPane" prefHeight="240.0"
+	prefWidth="360.0"
+	style="-fx-background-radius: 16; -fx-background-color: white; -fx-border-color: #4397ce; -fx-border-radius: 16;"
+	styleClass="rootPane" stylesheets="@../css/AddProduct.css"
+	xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+	<GridPane layoutX="60.0" layoutY="46.0" prefHeight="107.0"
+		prefWidth="240.0">
+		<columnConstraints>
+			<ColumnConstraints hgrow="SOMETIMES"
+				maxWidth="240.0" minWidth="10.0" prefWidth="240.0" />
+		</columnConstraints>
+		<rowConstraints>
+			<RowConstraints maxHeight="50.0" minHeight="10.0"
+				prefHeight="35.77777099609375" vgrow="SOMETIMES" />
+			<RowConstraints maxHeight="53.11112467447917"
+				minHeight="0.0" prefHeight="34.88889567057292" vgrow="SOMETIMES" />
+		</rowConstraints>
+		<children>
+			<MFXTextField fx:id="nameMFXTextField"
+				floatMode="BORDER" floatingText="Name" prefHeight="38.0"
+				prefWidth="240.0" />
+			<MFXTextField fx:id="categoryMFXTextField"
+				floatMode="BORDER" floatingText="Category (Optional)"
+				prefHeight="38.0" prefWidth="240.0" GridPane.rowIndex="1" />
+		</children>
+	</GridPane>
+	<MFXButton fx:id="updateMFXButton" buttonType="RAISED"
+		layoutX="230.0" layoutY="189.0" minHeight="27.0" minWidth="70.0"
+		onAction="#handleUpdateMFXButton"
+		style="-fx-background-color: #4397ce; -fx-text-fill: white;"
+		text="Update" />
+	<Label graphicTextGap="15.0" layoutX="117.0" layoutY="14.0"
+		style="-fx-text-fill: #4397ce; -fx-font-size: 18;" styleClass="header"
+		text="Update Product" />
+	<MFXButton fx:id="canceldMFXButton" layoutX="60.0"
+		layoutY="189.0" minHeight="27.0" minWidth="70.0"
+		onAction="#handleCanceldMFXButton" styleClass="outline-button"
+		stylesheets="@../css/Export.css" text="Cancel" />
+	<Label fx:id="validationLabel" alignment="CENTER" layoutX="8.0"
+		layoutY="153.0" prefHeight="17.0" prefWidth="343.0"
+		style="-fx-text-fill: #f0755d;" />
+</AnchorPane>

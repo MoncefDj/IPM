@@ -1,0 +1,27 @@
+@import 'MFXColors.css';
+@import 'Common.css';
+
+.mfx-button.selected {
+	-fx-background-color: -mfx-steel-blue; 
+	-fx-background-radius: 6.0; 
+	-fx-text-fill: white;
+}
+
+.mfx-button {
+	-fx-border-color: -mfx-steel-blue; 
+	-fx-border-radius: 6.0;
+	-fx-background-color: white; 
+	-fx-text-fill: -mfx-steel-blue;
+	-fx-font-family: 'Visby Round CF Medium';
+	-fx-font-size: 14.0;
+    -fx-min-width: 100.0px; 
+}
+
+.mfx-button .mfx-ripple-generator {
+	-mfx-ripple-radius: 40.0;
+	-mfx-auto-clip: true;
+}
+
+.mfx-button .text {
+	-fx-font-smoothing-type: lcd;
+}

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane fx:id="homeStackPane" maxHeight="-Infinity"
+	maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+	prefHeight="600.0" prefWidth="1080.0" stylesheets="@../css/Home.css"
+	xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="IPM.controllers.HomeController">
+	<children>
+		<GridPane fx:id="homeGridPane" alignment="CENTER" hgap="20.0"
+			prefHeight="600.0" prefWidth="1080.0" styleClass="grid-pane"
+			stylesheets="@../css/Home.css" vgap="20.0">
+			<columnConstraints>
+				<ColumnConstraints halignment="CENTER"
+					minWidth="100.0" prefWidth="300.0" />
+				<ColumnConstraints halignment="CENTER" />
+				<ColumnConstraints halignment="CENTER"
+					minWidth="10.0" />
+				<ColumnConstraints halignment="CENTER"
+					minWidth="100.0" prefWidth="300.0" />
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints minHeight="10.0" />
+				<RowConstraints minHeight="100.0" />
+				<RowConstraints minHeight="10.0" />
+			</rowConstraints>
+			<padding>
+				<Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+			</padding>
+			<children>
+				<StackPane fx:id="homeBackgroundStackpane"
+					minHeight="150.0" minWidth="300.0" prefHeight="480.0"
+					styleClass="grid-background" GridPane.columnSpan="4"
+					GridPane.rowSpan="3">
+					<opaqueInsets>
+						<Insets />
+					</opaqueInsets>
+				</StackPane>
+				<StackPane fx:id="homeImageContainerStackPane"
+					GridPane.columnIndex="1" GridPane.columnSpan="2"
+					GridPane.rowIndex="1" />
+				<Label fx:id="homeLabel" alignment="CENTER"
+					maxWidth="1.7976931348623157E308"
+					style="-fx-font-size: 24; -fx-text-fill: #4397ce;"
+					styleClass="header-label" text="Home" GridPane.columnIndex="1"
+					GridPane.columnSpan="2">
+					<GridPane.margin>
+						<Insets top="32.0" />
+					</GridPane.margin>
+				</Label>
+				<MFXButton id="custom" fx:id="getStartedButton"
+					buttonType="RAISED" minHeight="27.0" minWidth="70.0"
+					onAction="#handleGetStartedButtonAction" style="-fx-font-size: 18;"
+					text="Get started" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+				<MFXButton fx:id="ImportButton" minHeight="27.0"
+					minWidth="70.0" onAction="#handleImportMFXButton"
+					style="-fx-font-size: 18;" styleClass="outline-button"
+					text="Import" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+			</children>
+		</GridPane>
+	</children>
+</StackPane>
