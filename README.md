@@ -19,6 +19,7 @@ This program was developed as part of an academic thesis on "Incompatible Produc
 
 - Java JDK 20 or higher
 - Gradle 7.4.2 or higher
+- WiX Toolset v3.11.2 (for creating Windows installer)
 
 ## Dependencies
 
@@ -35,9 +36,9 @@ This program was developed as part of an academic thesis on "Incompatible Produc
 git clone https://github.com/MoncefDj/IPM.git
 ```
 
-2. Navigate to the project directory:
+2. Navigate to the lib directory:
 ```bash
-cd IPM
+cd IPM/lib
 ```
 
 3. Build the project:
@@ -47,10 +48,20 @@ gradle build
 
 ## Running the Application
 
-To run the application, execute:
+To run the application, make sure you're in the lib directory and execute:
 ```bash
 gradle run
 ```
+
+## Creating Windows Installer
+
+To create a Windows installer, make sure you're in the lib directory and execute:
+```bash
+gradle clean
+gradle jpackage
+```
+
+The installer will be created in `build/jpackage/` directory.
 
 ## Contributing
 
