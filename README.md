@@ -11,8 +11,6 @@ This program was developed as part of an academic thesis on "Incompatible Produc
 ## Features
 
 - Graphical visualization of incompatible products
-- Material safety management
-- Risk assessment tools
 - User-friendly interface built with JavaFX and MaterialFX
 
 ## Prerequisites
