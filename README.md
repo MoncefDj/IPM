@@ -6,7 +6,14 @@
 
 ## Overview
 
-This program was developed as part of an academic thesis on "Incompatible Products Management" presented by DJEZZAR Moncef, SADOUDI Abdessamad, and AMRI Taki. The program is designed to help manage hazardous materials and ensure the safety of personnel in various industries.
+This program was developed as part of an academic thesis on ["Incompatible Products Management"](./Incompatible%20products%20management.pdf) presented by DJEZZAR Moncef, SADOUDI Abdessamad, and AMRI Taki. The program is designed to help manage hazardous materials and ensure the safety of personnel in various industries.
+
+## About Incompatible Products Management
+
+Incompatible Products Management (IPM) is a critical safety system designed to prevent hazardous interactions between chemical products that could result in dangerous reactions when stored or handled together. The system helps:
+
+- Prevent accidents caused by incompatible material interactions
+- Optimize storage space while maintaining safety
 
 ## Features
 
@@ -74,6 +81,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - DJEZZAR Moncef
 - SADOUDI Abdessamad
 - AMRI Taki
+
+## Safety Disclaimer
+
+This software is designed as a support tool for managing incompatible products. Always consult with qualified safety professionals and follow local regulations and safety protocols when handling hazardous materials. The authors and contributors are not liable for any damages or accidents resulting from the use of this software.
 
 ---
 
